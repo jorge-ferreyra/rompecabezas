@@ -1,0 +1,30 @@
+.esquina {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  position: relative;
+}
+
+.esquina.top-left {
+  border-top-left-radius: 50px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.esquina.top-right {
+  border-top-right-radius: 50px;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.esquina.bottom-left {
+  border-bottom-left-radius: 50px;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.esquina.bottom-right {
+  border-bottom-right-radius: 50px;
+  grid-column: 3;
+  grid-row: 2;
+}
