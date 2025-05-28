@@ -10,6 +10,31 @@
   grid-column: 1;
   grid-row: 1;
   margin: 10px 0 0 10px;
+  z-index: 5;
+}
+
+.esquina.top-left::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.esquina.top-left::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
 }
 
 .esquina.top-right {
@@ -19,6 +44,30 @@
   margin: 10px 10px 0 0;
 }
 
+.esquina.top-right::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.esquina.top-right::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .esquina.bottom-left {
   border-bottom-left-radius: 50px;
   grid-column: 1;
@@ -26,9 +75,58 @@
   margin: 0 0 10px 10px;
 }
 
+.esquina.bottom-left::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.esquina.bottom-left::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .esquina.bottom-right {
   border-bottom-right-radius: 50px;
   grid-column: 3;
   grid-row: 2;
   margin: 0 10px 10px 0;
+  z-index: 5;
+}
+
+.esquina.bottom-right::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+}
+
+.esquina.bottom-right::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translatey(-50%);
 }
