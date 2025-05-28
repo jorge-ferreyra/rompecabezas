@@ -1,7 +1,9 @@
 ---
 import './Medios.css'
 
-const { id = "", top = false, bottom = false } = Astro.props;
+const { id = "", top = false, bottom = false, backgroundImage = null } = Astro.props;
 ---
 
-<section id={id} class=`medios ${top ? "top" : ""} ${bottom ? "bottom" : ""}` draggable="true"></section>
+<section id={id} class=`medios ${top ? "top" : ""} ${bottom ? "bottom" : ""}` >
+  { backgroundImage ? <img class="background-medios" src={backgroundImage} /> : null}
+</section>

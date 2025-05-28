@@ -1,6 +1,6 @@
 .main-container {
-  min-width: 80%;
-  min-height: 60%;
+  max-width: 1500px;
+  max-height: 700px;
   background-color: black;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

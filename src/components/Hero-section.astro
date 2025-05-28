@@ -4,11 +4,13 @@ import background from '../assets/background.svg';
 import Esquinas from './Esquinas.astro';
 import './Hero-section.css'
 import Medios from './Medios.astro';
+
+import puzzleImage from '../assets/violin.png'
 ---
 
 <main class="main-container">
 	<Esquinas id="pieza1" positionClass="top-left"></Esquinas>
-	<Medios id="pieza2" top></Medios>
+	<Medios id="pieza2" top backgroundImage={puzzleImage.src}></Medios>
 	<Esquinas id="pieza3" positionClass="top-right"></Esquinas>
 	<Esquinas id="pieza4" positionClass="bottom-left"></Esquinas>
 	<Medios id="pieza5" bottom></Medios>
