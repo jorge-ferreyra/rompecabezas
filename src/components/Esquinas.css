@@ -10,7 +10,7 @@
   grid-column: 1;
   grid-row: 1;
   margin: 10px 0 0 10px;
-  z-index: 5;
+  z-index: 1;
 }
 
 .esquina.top-left::after {

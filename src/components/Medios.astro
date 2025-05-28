@@ -1,0 +1,7 @@
+---
+import './Medios.css'
+
+const { id = "", top = false, bottom = false } = Astro.props;
+---
+
+<section id={id} class=`medios ${top ? "top" : ""} ${bottom ? "bottom" : ""}`></section>
