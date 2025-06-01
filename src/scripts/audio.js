@@ -4,7 +4,7 @@ export function validatePassword() {
   const inputValue = inputAnswer.value.toLowerCase().trim()
 
 
-  const inputInfo = document.getElementById('info')
+  const inputInfo = document.getElementById('answer-status')
 
   if (inputValue === finalAnswer) {
     inputInfo.value = 'Acceso concedido';

@@ -7,9 +7,57 @@
   justify-content: center;
   align-items: center;
   color: white;
-  gap: 50px;
+  gap: 70px;
 }
 
 .audio-section h1 {
   margin: 0;
+  font-size: 40px;
+}
+
+.audio-answer {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.audio-answer input,
+.audio-answer button {
+  height: fit-content;
+  padding: 5px;
+  text-align: center;
+}
+
+.audio-answer label {
+  font-weight: bold;
+  background-color: black;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.audio-section audio {
+  padding: 80px 80px 80px 80px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.answer-box {
+  width: 300px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#answer-status {
+  width: fit-content;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  text-align: center;
 }

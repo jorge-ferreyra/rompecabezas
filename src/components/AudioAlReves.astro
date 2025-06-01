@@ -10,8 +10,11 @@ import './AudioAlReves.css'
     <label for="respuesta-audio">Completa la frase: </label>
     <input id="respuesta-audio" name="respuesta-audio" type="text" placeholder="Tu respuesta..." size="50" required>
     <button onclick="validatePassword()">Verificar</button>
-    <input type="text" id="info" placeholder="Campo protegido" readonly><br><br>
   </div>
-
+  
+  <div class="answer-box">
+    <input type="text" id="answer-status" placeholder="Campo protegido" readonly>
+  </div>
+  
   <script type="module" src="/src/scripts/audio.js"></script>
 </section>
