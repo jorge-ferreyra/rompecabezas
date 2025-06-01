@@ -1,0 +1,17 @@
+---
+import './AudioAlReves.css'
+---
+
+<section class="audio-section">
+  <h1>Descifra el mensaje oculto...</h1>
+  <audio src="/momo-corte-de-pelo.mp3" controls></audio>
+
+  <div class="audio-answer">
+    <label for="respuesta-audio">Completa la frase: </label>
+    <input id="respuesta-audio" name="respuesta-audio" type="text" placeholder="Tu respuesta..." size="50" required>
+    <button onclick="validatePassword()">Verificar</button>
+    <input type="text" id="info" placeholder="Campo protegido" readonly><br><br>
+  </div>
+
+  <script type="module" src="/src/scripts/audio.js"></script>
+</section>
